@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- rounded_gray_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- กำหนดสีพื้นหลังเป็นสีเทา -->
+    <solid android:color="@color/babyYellow"/>
+
+    <!-- กำหนดขอบมน -->
+    <corners android:radius="20dp"/>
+    <stroke
+        android:width="2dp"
+        android:color="@color/white"/>
+
+</shape>

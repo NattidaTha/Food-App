@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="menuColor">#FFEF92</color>
+    <color name="soupColor">#F5CAC3</color>
+    <color name="friedColor">#B6D7CF</color>
+    <color name="snackColor">#A9D7DA</color>
+    <color name="drinkColor">#F3C596</color>
+    <color name="babyOrange">#F8A56D</color>
+    <color name="babyYellow">#FFFFE5</color>
+    <color name="Pink">#FF7A7A</color>
+
+
+</resources>

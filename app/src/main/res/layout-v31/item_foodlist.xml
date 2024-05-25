@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:numberpicker="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/square">
+
+
+    <ImageView
+        android:id="@+id/image_food"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/square"
+        android:scaleType="centerCrop"
+        android:clipToOutline="true"/>
+   <TextView
+        android:id="@+id/text_foodName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/image_food"
+        android:text="FoodName"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_price"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_foodName"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toEndOf="@+id/image_food"
+        android:background="@drawable/square"
+        android:backgroundTint="@color/Pink"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="200 THB"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_price"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/image_food"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/sc">
+
+        <Button
+            android:id="@+id/decrease"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:onClick="decreaseInteger"
+            android:text="-"
+            android:textColor="@color/Pink"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/circle"/>
+
+        <TextView
+            android:id="@+id/integer_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/increase"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:onClick="increaseInteger"
+            android:text="+"
+            android:textColor="@color/white"
+            android:background="@drawable/circle"
+            android:backgroundTint="@color/Pink"/>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/buttonAddCart"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/baseline_shopping_cart_24"
+        android:background="@drawable/circle"
+        android:backgroundTint="@color/babyOrange"
+        app:tint="@color/white" />
+
+
+</RelativeLayout>
